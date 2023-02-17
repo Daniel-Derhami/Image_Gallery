@@ -29,7 +29,7 @@ body{
     cursor: pointer;
 }
 
-.lightbox-comtainer{
+.lightbox-container{
     position: fixed;
     top: 0;
     left: 0;
@@ -37,4 +37,19 @@ body{
     height: 100vh;
     z-index: 100;
     background: rgba(0, 0, 0, 0.9);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lightbox-container .lightbox {
+    width: 80%;
+    max-height: 90vh;
+}
+
+.lightbox-container .lightbox img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
