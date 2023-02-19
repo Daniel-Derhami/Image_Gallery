@@ -89,3 +89,21 @@ body{
     box-shadow: 0 4px 16px -8px rgba(0, 0, 0, 0.8);
 
 }
+
+.gallery-container .lightbox .next-btn,
+.gallery-container .lightbox .previous-btn {
+  position: absolute;
+  top: 50%;
+  background: #fff81f;
+  font-size: 18px;
+  padding: 16px;
+  cursor: pointer;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: all 500ms;
+}
+
+.gallery-container .lightbox:hover .next-btn,
+.gallery-container .lightbox:hover .previous-btn {
+  opacity: 1;
+}
