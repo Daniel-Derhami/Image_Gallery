@@ -56,6 +56,7 @@ body{
     height: 100%;
     width: 100%;
     object-fit: cover;
+    vertical-align: middle;
 }
 
 .gallery-container .lightbox .close-btn,
@@ -109,4 +110,27 @@ body{
   left: 0;
 }
 
+@media (max-width: 700px){
+    .lightbox-container .lightbox {
+        width: 95%;
+        overflow: visible;
+    }
 
+    .gallery-container .lightbox .next-btn,
+    .gallery-container .lightbox .previous-btn {
+        opacity: 0.8;
+    }
+    .gallery-container .lightbox .close-btn,
+    .gallery-container .lightbox .download-btn{
+       font-size: 160px;
+        padding: 10px 18px;
+    }
+
+    .gallery-container .lightbox .download-btn{
+    right: 60px;
+}
+    .gallery-container .lightbox .title{
+        bottom: -20px;
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+}
