@@ -95,7 +95,8 @@ body{
 .gallery-container .lightbox .previous-btn {
   position: absolute;
   top: 50%;
-  background: #fff81f;
+  //* background: #fff81f; *//
+  background: #fff000;
   font-size: 18px;
   padding: 16px;
   cursor: pointer;
