@@ -103,6 +103,11 @@ body{
   transform: translateY(-50%);
 }
 
+.gallery-container .lightbox:hover .next-btn,
+.gallery-container .lightbox:hover .previous-btn {
+  opacity: 1;
+}
+
 .gallery-container .lightbox .next-btn {
   right: 0;
 }
