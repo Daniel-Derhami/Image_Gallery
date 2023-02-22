@@ -88,7 +88,13 @@ body{
     border-radius: 8px;
     font-size: 18px;
     box-shadow: 0 4px 16px -8px rgba(0, 0, 0, 0.8);
+     transition: all 500ms;
 
+}
+
+.gallery-container .lightbox:hover .title {
+  opacity: 1;
+  bottom: 20px;
 }
 
 .gallery-container .lightbox .next-btn,
@@ -101,6 +107,8 @@ body{
   padding: 16px;
   cursor: pointer;
   transform: translateY(-50%);
+    opacity: 0;
+  transition: all 500ms;
 }
 
 .gallery-container .lightbox:hover .next-btn,
