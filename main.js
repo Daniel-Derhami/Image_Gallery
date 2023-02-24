@@ -35,3 +35,22 @@ const imagesList = [
     title: "The Sixth Title",
   },
 ];
+
+const imageGrid = document.querySelector(".image-grid");
+
+
+const populateImages = () => {
+  imagesList.forEach((i) => {
+    const image = document.createElement("div");
+    image.classList.add("image");
+    image.addEventListener("click", () => {
+      showLightbox(i);
+    });
+    const img = document.createElement("img");
+    img.src = i.thumbUrl;
+    img.alt = i.title;
+
+    image.appendChild(img);
+    imageGrid.appendChild(image);
+  });
+};
