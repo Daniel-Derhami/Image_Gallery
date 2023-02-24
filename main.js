@@ -89,3 +89,25 @@ nextBtn.addEventListener("click", () => {
 previousBtn.addEventListener("click", () => {
   showPreviousImage(currentImage);
 });
+
+// Next and Previous Images
+
+const showNextImage = (data) => {
+  let nextImageIndex = imagesList.indexOf(data) + 1;
+
+  if (nextImageIndex < imagesList.length) {
+    showLightbox(imagesList[nextImageIndex]);
+  } else {
+    showLightbox(imagesList[0]);
+  }
+};
+
+const showPreviousImage = (data) => {
+  let previousImageIndex = imagesList.indexOf(data) - 1;
+
+  if (previousImageIndex >= 0) {
+    showLightbox(imagesList[previousImageIndex]);
+  } else {
+    showLightbox(imagesList[imagesList.length - 1]);
+  }
+};
