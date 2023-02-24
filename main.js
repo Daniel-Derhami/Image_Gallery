@@ -22,3 +22,16 @@ const imagesList = [
     imageUrl: "images/004.jpg",
     title: "The Fourth Title",
   },
+
+      {
+    thumbUrl: "images/005-thmb.jpg",
+    imageUrl: "images/005.jpg",
+    title: "The Fifth Title",
+  },
+
+  {
+    thumbUrl: "images/006-thmb.jpg",
+    imageUrl: "images/006.jpg",
+    title: "The Sixth Title",
+  },
+];
