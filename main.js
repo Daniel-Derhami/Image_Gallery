@@ -37,7 +37,15 @@ const imagesList = [
 ];
 
 const imageGrid = document.querySelector(".image-grid");
+const lightboxContainer = document.querySelector(".lightbox-container");
+const lightboxImage = document.querySelector(".lightbox img");
+const lightboxTitle = document.querySelector(".lightbox .title");
+const closeBtn = document.querySelector(".lightbox .close-btn");
 
+
+let currentImage = "";
+
+// Populate Images
 
 const populateImages = () => {
   imagesList.forEach((i) => {
@@ -54,3 +62,30 @@ const populateImages = () => {
     imageGrid.appendChild(image);
   });
 };
+
+populateImages();
+
+// Show Lightbox
+
+const showLightbox = (data) => {
+  lightboxContainer.classList.add("active");
+  lightboxImage.src = "images/loading.png";
+  lightboxImage.src = data.imageUrl;
+  lightboxImage.alt = data.title;
+  lightboxTitle.innerText = data.title;
+  downloadBtn.href = data.imageUrl;
+
+  currentImage = data;
+};
+
+closeBtn.addEventListener("click", () => {
+  lightboxContainer.classList.remove("active");
+});
+
+nextBtn.addEventListener("click", () => {
+  showNextImage(currentImage);
+});
+
+previousBtn.addEventListener("click", () => {
+  showPreviousImage(currentImage);
+});
