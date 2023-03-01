@@ -43,7 +43,7 @@ const lightboxTitle = document.querySelector(".lightbox .title");
 const closeBtn = document.querySelector(".lightbox .close-btn");
 const downloadBtn = document.querySelector(".lightbox .download-btn");
 const nextBtn = document.querySelector(".lightbox .next-btn");
-
+const previousBtn = document.querySelector(".lightbox .previous-btn");
 
 let currentImage = "";
 
