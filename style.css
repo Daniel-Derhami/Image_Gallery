@@ -1,5 +1,5 @@
 body {
-  background: #5effd4;
+  background: silver;
 }
 
 /* Images Grid */
@@ -11,10 +11,10 @@ body {
 }
 
 .gallery-container h2.gallery-title {
-  font-size: 40px;
+  font-size: 60px;
   text-align: center;
   color: #073b4c;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
   padding-bottom: 20px;
 }
 
