@@ -8,13 +8,13 @@ const imagesList = [
   {
     thumbUrl: "images/002-thmb.jpg",
     imageUrl: "images/002.jpg",
-    title: "The Second Title",
+    title: "Sea shore",
   },
 
       {
     thumbUrl: "images/003-thmb.jpg",
     imageUrl: "images/003.jpg",
-    title: "The Third Title",
+    title: "View from my window",
   },
 
   {
