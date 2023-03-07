@@ -20,13 +20,13 @@ const imagesList = [
   {
     thumbUrl: "images/004-thmb.jpg",
     imageUrl: "images/004.jpg",
-    title: "The Fourth Title",
+    title: "behind the walls",
   },
 
       {
     thumbUrl: "images/005-thmb.jpg",
     imageUrl: "images/005.jpg",
-    title: "The Fifth Title",
+    title: "Behind the walls",
   },
 
   {
