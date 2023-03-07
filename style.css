@@ -63,9 +63,9 @@ body {
   position: relative;
   overflow: hidden;
 
-  transform: translateY(-120%);
+  transform: translateY(-100%);
   opacity: 0;
-  transition: all 500ms;
+  transition: all 800ms;
 }
 
 .lightbox-container.active .lightbox {
@@ -110,7 +110,7 @@ body {
   border-radius: 8px;
   font-size: 18px;
   box-shadow: 0 4px 16px -8px rgba(0, 0, 0, 0.8);
-  transition: all 500ms;
+  transition: all 800ms;
 }
 
 .gallery-container .lightbox:hover .title {
